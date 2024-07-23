@@ -1,7 +1,7 @@
 {
-  "name": "learnstorybook-design-system-template",
+  "name": "@npmtestliffi/learnstorybook-design-system",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
   "files": [
@@ -78,5 +78,8 @@
   },
   "resolutions": {
     "jackspeak": "2.1.1"
-  }
+  },
+  "description": "Storybook design systems tutorial",
+  "repository": "https://github.com/GitHubLiffi/learnstorybook-design-system.git",
+  "author": "m.bin.abdul.gani <m.bin.abdul.gani@accenture.com>"
 }
