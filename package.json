@@ -1,11 +1,11 @@
 {
-  "name": "learnstorybook-design-system-template",
+  "name": "@npmtestliffi/learnstorybook-design-system-template",
   "repository": {
     "type": "git",
     "url": "https://github.com/GitHubLiffi/learnstorybook-design-system.git"
   },
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
   "files": [
@@ -22,7 +22,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
-    "chromatic": "npx chromatic"
+    "chromatic": "npx chromatic",
+    "test-storybook": "test-storybook"
   },
   "devDependencies": {
     "@babel/core": "^7.22.5",
@@ -45,6 +46,7 @@
     "@storybook/react": "^8.2.5",
     "@storybook/react-vite": "^8.2.5",
     "@storybook/test": "^8.2.5",
+    "@storybook/test-runner": "^0.19.1",
     "@vitejs/plugin-react": "^3.1.0",
     "auto": "11.2.0",
     "boxen": "^5.0.1",
