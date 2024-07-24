@@ -1,5 +1,9 @@
 {
   "name": "learnstorybook-design-system-template",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/GitHubLiffi/learnstorybook-design-system.git"
+  },
   "version": "0.1.0",
   "private": true,
   "main": "dist/cjs/index.js",
@@ -42,7 +46,7 @@
     "@storybook/react-vite": "^8.2.5",
     "@storybook/test": "^8.2.5",
     "@vitejs/plugin-react": "^3.1.0",
-    "auto": "^10.3.0",
+    "auto": "11.2.0",
     "boxen": "^5.0.1",
     "chromatic": "^11.5.6",
     "dedent": "^0.7.0",
