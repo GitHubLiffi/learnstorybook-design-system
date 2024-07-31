@@ -10,6 +10,15 @@
 
 This template ships with the main React configuration files you'll need to get up and running fast.
 
+## Tasks for Storybook Demo
+
+1) Create reusable components based on [Figma design](https://www.figma.com/design/N0KxIxkd2feiy3IRG7XjfK/00.-Design-System-%5BExtracted%5D?node-id=311-4172&t=x5lUfUyISJABOWj4-0)
+2) Integrate qiankun MFEs with Storybook
+3) Containerisation with [Docker](https://hub.docker.com/)
+4) Version Management with Storybook e.g. how to manage different versions of reusable components being used in the frontend projects
+7) explore plugin to streamline Figma process
+8) Explore Testing solutions - playwright with storybook?
+
 ## 🚅 Quick start
 
 1.  **Create the application.**
@@ -79,12 +88,9 @@ A quick look at the top-level files and directories included with this template.
 
 12. **`README.md`**: A text file containing useful reference information about the project.
 
-## Contribute
-
-If you encounter an issue with the template, we encourage you to open an issue in this template's repository.
-
 ## Learning Storybook
 
 1. Read our introductory tutorial over at [Storybook tutorials](https://storybook.js.org/tutorials/intro-to-storybook/react/en/get-started/).
 2. Learn how to transform your component libraries into design systems in our [Design Systems for Developers](https://storybook.js.org/tutorials/design-systems-for-developers/) tutorial.
 3. See our official documentation at [Storybook](https://storybook.js.org/).
+4. [React Managing State Tutorials](https://react.dev/learn/managing-state)
