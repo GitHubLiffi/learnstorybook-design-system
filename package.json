@@ -4,7 +4,7 @@
     "type": "git",
     "url": "https://github.com/GitHubLiffi/learnstorybook-design-system.git"
   },
-  "version": "0.1.0",
+  "version": "0.1.1",
   "private": false,
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
@@ -32,8 +32,8 @@
     "@babel/preset-typescript": "^7.21.5",
     "@chromatic-com/storybook": "1.6.1",
     "@emotion/babel-plugin": "^11.11.0",
-    "@emotion/react": "^11.11.1",
-    "@emotion/styled": "^11.11.0",
+    "@emotion/react": "^11.13.0",
+    "@emotion/styled": "^11.13.0",
     "@rollup/plugin-babel": "^6.0.3",
     "@rollup/plugin-commonjs": "^24.1.0",
     "@rollup/plugin-node-resolve": "^15.0.2",
@@ -82,5 +82,8 @@
   },
   "resolutions": {
     "jackspeak": "2.1.1"
+  },
+  "dependencies": {
+    "@mui/material": "^5.16.6"
   }
 }
