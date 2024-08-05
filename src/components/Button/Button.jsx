@@ -2,10 +2,9 @@ import React from 'react';
 import Button from '@mui/material/Button';
 import LoadingButton from '@mui/lab/LoadingButton';
 import DeleteIcon from '@mui/icons-material/Delete';
-import { color, typography } from '../shared/newStyles';
+import { color, typography } from '../../shared/newStyles';
 import { CircularProgress } from '@mui/material';
 import PropTypes from 'prop-types';
-import { Avatar, sizes } from '../Avatar';
 
 // TODO: Fix disabled and loading states, drop shadow issue with primary button loading
 
