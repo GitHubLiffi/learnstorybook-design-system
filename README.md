@@ -5,10 +5,9 @@
 </p>
 
 <h1 align="center">
-  Chromatic's Design Systems for Developers tutorial template
+    Storybook Demo
 </h1>
 
-This template ships with the main React configuration files you'll need to get up and running fast.
 
 ## Tasks for Storybook Demo
 
@@ -22,18 +21,7 @@ This template ships with the main React configuration files you'll need to get u
 
 ## 🚅 Quick start
 
-1.  **Create the application.**
-
-    Use [degit](https://github.com/Rich-Harris/degit) to get this template.
-
-    ```shell
-    # Clone the template
-    npx degit chromaui/learnstorybook-design-system-template learnstorybook-design-system
-    ```
-
 1.  **Install the dependencies.**
-
-    Navigate into your new site’s directory and install the necessary dependencies.
 
     ```shell
     # Navigate to the directory
@@ -41,12 +29,11 @@ This template ships with the main React configuration files you'll need to get u
 
     # Install the dependencies
     yarn
+    
+    # Start storybook in port 6006
+    yarn storybook
     ```
-
-1.  **Open the source code and start editing!**
-
-    Open the `learnstorybook-design-system` directory in your code editor of choice and building your first component!
-
+    
 ## 🔎 What's inside?
 
 A quick look at the top-level files and directories included with this template.
@@ -98,3 +85,4 @@ A quick look at the top-level files and directories included with this template.
 - [React Managing State Tutorials](https://react.dev/learn/managing-state)
 - [Material UI Docs](https://mui.com/material-ui/getting-started/)
 - Helpful link for integrating MUI with Storybook(Typescript) [here](https://storybook.js.org/recipes/@mui/material)
+- Figma integration [addon](https://storybook.js.org/addons/@storybook/addon-designs)
