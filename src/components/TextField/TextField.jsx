@@ -1,10 +1,14 @@
 import React from 'react';
 import TextField from '@mui/material/TextField';
-import AutoComplete from '@mui/material/Autocomplete';
-import NewButton from '../Button/Button';
+import Autocomplete from '@mui/material/Autocomplete';
 import PropTypes from 'prop-types';
 
-export const NewTextField = ({ label, ...props }) => {
+// TODO: Rich Text Field implementation, Character Count implementation
+
+export const NewTextField = ({ label, isAutoComplete, options, ...props }) => {
+  if (isAutoComplete) {
+    return <Autocomplete sx={{ width: '223px' }} {...props} options={options} renderInput={(params) => <TextField {...params} label={label}/>} />
+  }
   return <TextField label={label} variant='outlined' {...props} />
 }
 
@@ -15,6 +19,10 @@ NewTextField.propTypes = {
    * The label for the input field
    */
   label: PropTypes.string,
+  /**
+   * Render an Autocomplete component instead of a TextField
+   */
+  isAutoComplete: PropTypes.bool,
 }
 
 NewTextField.defaultProps = {

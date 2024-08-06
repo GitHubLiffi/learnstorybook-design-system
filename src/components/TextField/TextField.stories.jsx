@@ -34,3 +34,15 @@ export const DisabledWithNoValue = {
     <NewTextField {...args} disabled/>
   ),
 }
+  /**
+   * Returns an Autocomplete component with fixed width if isAutocomplete is true
+   */
+export const AutoComplete = {
+  args: {
+    isAutoComplete: true,
+    label: 'Option'
+  },
+  render:(args) => (
+    <NewTextField options={['Option 1', 'Option 2']} {...args}/>
+  )
+}
