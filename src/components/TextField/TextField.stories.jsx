@@ -34,6 +34,13 @@ export const DisabledWithNoValue = {
     <NewTextField {...args} disabled/>
   ),
 }
+
+export const WithErrorText = {
+  render:(args) => (
+    <NewTextField {...args} error value='Value' helperText='Error message goes here.'
+    />
+  ),
+}
   /**
    * Returns an Autocomplete component with fixed width if isAutocomplete is true
    */
