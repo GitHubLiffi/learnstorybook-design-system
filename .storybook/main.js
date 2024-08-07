@@ -4,6 +4,7 @@ const config = {
   addons: [
     '@storybook/addon-onboarding',
     '@storybook/addon-links',
+    '@storybook/addon-actions',
     '@storybook/addon-essentials',
     '@chromatic-com/storybook',
     '@storybook/addon-interactions',
