@@ -2,7 +2,7 @@ import React from 'react';
 import { action } from '@storybook/addon-actions';
 import { Dropdown } from './Dropdown';
 
-const defaultOptions = ['Menu Item', 'Menu Item'];
+const defaultOptions = [{id: 1, value: 'Menu Item 1'},{id: 2, value: 'Menu Item 2'}];
 
 export default {
   title: 'Storybook Demo/Dropdown',
@@ -75,6 +75,20 @@ export const WithHelperText =  {
     required: false,
     disabled: false,
     helperText: 'Helper text goes here'
+  },
+  render: (args) => (
+    <Dropdown {...args}
+    />
+  )
+};
+
+export const Multiple =  {
+  args: {
+    label: 'Label',
+    options: defaultOptions,
+    required: false,
+    disabled: false,
+    multiple: true,
   },
   render: (args) => (
     <Dropdown {...args}

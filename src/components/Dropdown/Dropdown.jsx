@@ -5,9 +5,11 @@ import {
   Select,
   MenuItem,
   Box,
-  FormHelperText,
+  FormHelperText, OutlinedInput, ListItemText, Checkbox,
 } from '@mui/material';
 import PropTypes from 'prop-types';
+
+// TODO: Multiple Options where values are the same not working as expected
 
 export const Dropdown = ({
   label,
@@ -16,13 +18,47 @@ export const Dropdown = ({
   disabled,
   initialValue,
   helperText,
+  multiple,
   ...props
 }) => {
   const [selectedValue, setSelectedValue] = useState(initialValue || '');
+  const [multipleSelectedValue, setMultipleSelectedValue] = React.useState([]);
 
   const handleChange = (event) => {
     setSelectedValue(event.target.value);
   };
+
+  const handleMultipleChange = (event) => {
+    // Fancy way of saying const value = event.target.value through destructuring assignment syntax from MUI docs
+    const {
+      target: { value },
+    } = event;
+    setMultipleSelectedValue(value);
+  };
+
+  if (multiple) {
+    return (
+      <div>
+        <FormControl sx={{ m: 1, width: '223px' }}>
+          <InputLabel>{label}</InputLabel>
+          <Select
+            multiple
+            value={multipleSelectedValue}
+            onChange={handleMultipleChange}
+            input={<OutlinedInput label={label} />}
+            renderValue={(selected) => selected.join(', ')}
+          >
+            {options.map((option) => (
+              <MenuItem key={option.id} value={option.value}>
+                <Checkbox checked={multipleSelectedValue.indexOf(option.value) > -1} />
+                <ListItemText primary={option.value} />
+              </MenuItem>
+            ))}
+          </Select>
+        </FormControl>
+      </div>
+    );
+  }
 
   return (
     <Box sx={{ minWidth: 120, width: '223px' }}>
@@ -37,9 +73,9 @@ export const Dropdown = ({
           helperText={helperText}
         >
           {options &&
-            options.map((option, index) => (
-              <MenuItem key={index} value={option}>
-                {option}
+            options.map((option) => (
+              <MenuItem key={option.id} value={option.value}>
+                {option.value}
               </MenuItem>
             ))}
         </Select>
