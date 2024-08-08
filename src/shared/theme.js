@@ -9,4 +9,9 @@ export const muiTheme = createTheme({
       dark: `${color.primaryDark}`
     },
   },
+  typography: {
+    h5: {
+      fontSize: 20,
+    }
+  }
 });
