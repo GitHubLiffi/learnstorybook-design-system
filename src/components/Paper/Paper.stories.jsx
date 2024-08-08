@@ -14,8 +14,14 @@ export default {
 
 export const Standard = {
   args: {
-    // children: 'Page content goes here.',
     children: 'Page content goes here.',
+    header: 'This is section title.',
+    loading: false,
+  }
+}
+
+export const Loading = {
+  args: {
     header: 'This is section title.',
     loading: false,
   }
