@@ -2,9 +2,9 @@ import React from 'react';
 import { Paper, CircularProgress, Box, Typography } from '@mui/material';
 import PropTypes from 'prop-types';
 
-// TODO: Double check fonts for header seems abit off
+// TODO: Double check fonts for header seems abit off, page content doesnt stay in bounds of paper
 
-export const NewPaper = ({ children, header, loading }) => {
+export const NewPaper = ({ header, loading, children }) => {
   return (
     <Box
       sx={{
@@ -38,7 +38,7 @@ export const NewPaper = ({ children, header, loading }) => {
         }}
         variant='outlined'
       >
-        {loading ? <CircularProgress /> : { children }}
+        {loading ? <CircularProgress /> : children }
       </Paper>
     </Box>
   );

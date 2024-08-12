@@ -23,6 +23,6 @@ export const Standard = {
 export const Loading = {
   args: {
     header: 'This is section title.',
-    loading: false,
+    loading: true,
   }
 }
