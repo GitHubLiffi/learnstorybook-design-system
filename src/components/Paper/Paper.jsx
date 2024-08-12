@@ -54,5 +54,6 @@ NewPaper.propTypes = {
 };
 
 NewPaper.defaultProps = {
+  header: '',
   loading: false,
 };
