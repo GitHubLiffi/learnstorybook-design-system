@@ -14,12 +14,13 @@
 1) Create reusable components based on [Figma design](https://www.figma.com/design/N0KxIxkd2feiy3IRG7XjfK/00.-Design-System-%5BExtracted%5D?node-id=311-4172&t=x5lUfUyISJABOWj4-0)
     - In Progress
       - Table
-      - Empty/Error State Messages
     - Done
       - Button
       - TextField
       - Dropdown
-      - Paper
+      - Paper 
+      - Empty/Error State Messages
+
 2) Integrate qiankun MFEs with Storybook
 3) Containerisation with [Docker](https://hub.docker.com/)
 4) Version Management with Storybook e.g. how to manage different versions of reusable components being used in the frontend projects
