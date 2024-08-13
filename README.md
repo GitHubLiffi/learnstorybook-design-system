@@ -12,6 +12,13 @@
 ## Tasks for Storybook Demo
 
 1) Create reusable components based on [Figma design](https://www.figma.com/design/N0KxIxkd2feiy3IRG7XjfK/00.-Design-System-%5BExtracted%5D?node-id=311-4172&t=x5lUfUyISJABOWj4-0)
+    - Inbox
+      - Look into icons, typography and colors documentation/ theming
+    - To Do
+      - Callout Banners
+      - Modal
+      - Snackbar
+      - UI Shell and Navigation
     - In Progress
       - Table
     - Done
