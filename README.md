@@ -14,6 +14,7 @@
 1) Create reusable components based on [Figma design](https://www.figma.com/design/N0KxIxkd2feiy3IRG7XjfK/00.-Design-System-%5BExtracted%5D?node-id=311-4172&t=x5lUfUyISJABOWj4-0)
     - Inbox
       - Look into icons, typography and colors documentation/ theming
+      - Change icon in main page of storybook app/ Styling for main app
     - To Do
       - Callout Banners
       - Modal
@@ -103,3 +104,5 @@ A quick look at the top-level files and directories included with this template.
 - Helpful link for integrating MUI with Storybook(Typescript) [here](https://storybook.js.org/recipes/@mui/material)
 - Figma integration [addon](https://storybook.js.org/addons/@storybook/addon-designs)
 - [React-hook-form-mui package](https://www.npmjs.com/package/react-hook-form-mui) might be useful for form validations
+- How Paper component is designed for [elevation](https://m2.material.io/design/environment/elevation.html#elevation-in-material-design)
+- Data Grid Getting Started and helpful list of features(free/paid) [here](https://mui.com/x/react-data-grid/getting-started/)
