@@ -3,6 +3,12 @@ import { color, typography } from './newStyles';
 
 
 export const muiTheme = createTheme({
+  mixins: {
+    MuiDataGrid: {
+      // Headers, and top & bottom fixed rows
+      containerBackground: '#ECEFF1',
+    },
+  },
   palette: {
     primary: {
       main: `${color.primary}`,
