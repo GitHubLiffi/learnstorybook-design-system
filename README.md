@@ -30,6 +30,13 @@
       - Empty/Error State Messages
 
 2) Integrate qiankun MFEs with Storybook
+   - To Do
+     - Create MFEs with following libraries and versions
+       - React - v16.14.0 
+       - Typescript - v4.6.3
+       - @mui/material - v5.11.15
+       - qiankun - v2.3.0
+     - Import and test Storybook functionality
 3) Containerisation with [Docker](https://hub.docker.com/)
 4) Version Management with Storybook e.g. how to manage different versions of reusable components being used in the frontend projects
 7) explore plugin to streamline Figma process
