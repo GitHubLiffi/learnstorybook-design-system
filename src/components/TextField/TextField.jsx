@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import TextField from '@mui/material/TextField';
 import Autocomplete from '@mui/material/Autocomplete';
 import PropTypes from 'prop-types';
@@ -9,13 +9,42 @@ import { color } from '../../shared/newStyles';
 export const NewTextField = ({ label, isAutoComplete, options, error, helperText, ...props }) => {
   // Determine inputProps based on whether an error exists
   const inputProps = error ? { style: { color: `${color.systemRedShades['600']}` } } : {};
+  const [open, setOpen] = useState(false);
+
 
   if (isAutoComplete) {
     return (
       <Autocomplete
+        noOptionsText='No Results'
+        open={open}
+        onInputChange={(event, value) => {
+          if (value.length > 0 && !open) {
+            setOpen(true);
+          }
+        }}
+        onClose={() => setOpen(false)}
+        filterOptions={(options, params) => {
+          const { inputValue } = params;
+          if (!inputValue) return [];
+          const lowerCaseInput = inputValue.toLowerCase();
+          return options.filter(option => {
+            if (typeof option === 'string') {
+              return option.toLowerCase().includes(lowerCaseInput);
+            }
+            if (option.label) {
+              return option.label.toLowerCase().includes(lowerCaseInput);
+            }
+            return false;
+          });
+        }}
+
         {...props}
         options={options}
-        sx={{ width: '223px' }}
+        sx={{ width: '223px',
+          '& .MuiSvgIcon-root': {
+            display: 'none',
+          },
+        }}
         renderInput={(params) => (
           <TextField
             {...params}

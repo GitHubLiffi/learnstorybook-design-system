@@ -1,11 +1,9 @@
 import { createTheme } from '@mui/material/styles';
 import { color, typography } from './newStyles';
 
-
 export const muiTheme = createTheme({
   mixins: {
     MuiDataGrid: {
-      // Headers, and top & bottom fixed rows
       containerBackground: '#ECEFF1',
     },
   },
@@ -19,5 +17,14 @@ export const muiTheme = createTheme({
     h5: {
       fontSize: 20,
     }
-  }
+  },
+  components: {
+    MuiOutlinedInput: {
+      styleOverrides: {
+        root: {
+          backgroundColor: 'white',
+        },
+      },
+    },
+  },
 });
